@@ -1,0 +1,55 @@
+.img_cat {
+    width: 150px;
+}
+
+#nombreGato,
+#razaGato,
+#pesoCat,
+#fechaNacimiento {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#content_action_cat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    margin: 10px 0px;
+}
+
+#content_action_cat>.btn {
+    margin: 5px;
+}
+
+#content_createCat {
+    width: 50%;
+}
+
+#btn_salir {
+    align-self: flex-start;
+}
+
+#content_msg_cat_dead {
+    position: absolute;
+    background: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    height: 40%;
+    box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#content_msg_cat_dead p {
+    font-size: 1.5rem;
+}
+
+#btn_ok {
+    margin: 20px 0px 0px 0px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Javier Ponferrada López">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Lindo gatito</title>
+    <script src="js/Gatito.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <main>
+        <div id="content_createCat">
+            <p class="title">Lindo gatito</p>
+            <div class="content_inputCreateCat">
+                <label for="nombreCatCreation">Nombre</label>
+                <input id="nombreCatCreation" type="text" name="nombre" />
+                <p id="msgErrorNombre" class="msgError"></p>
+            </div>
+            <div class="content_inputCreateCat">
+                <label for="raza">Raza</label>
+                <select name="raza" id="raza">
+                    <option value="Siamés">Siamés</option>
+                    <option value="Persa">Persa</option>
+                    <option value="Bengala">Bengala</option>
+                    <option value="Burmés">Burmés</option>
+                </select>
+            </div>
+            <div class="content_inputCreateCat">
+                <label for="pesoCatCreation">Peso kg</label>
+                <input id="pesoCatCreation" type="text" name="peso" />
+                <p id="msgErrorPeso" class="msgError"></p>
+            </div>
+            <div class="content_inputCreateCat">
+                <label for="fechaNacimientoCreation">Fecha de nacimiento</label>
+                <input id="fechaNacimientoCreation" type="date">
+                <p id="msgErrorFecha" class="msgError"></p>
+            </div>
+            
+            <button id="btn_createCat" class="btn">Crear gatito</button>
+        </div>
+
+    </main>
+
+</body>
+
+
+</html>
