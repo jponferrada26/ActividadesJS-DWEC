@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Javier Ponferrada López">
+    <title>Validador</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <noscript>Para poder disfrutar de nuestros servicios, necesitas tener habilitado JavaScript su navegador. Gracias:)</noscript>
+    <div id="formulario">
+        <p class="title">Formulario completito</p>
+        <div class="contentInput">
+            <label>Checkbox</label>
+            <div class="content_radio_select">
+                <input type="checkbox" name="checkbox" value="check1" />check 1
+            </div>
+
+
+            <div class="content_radio_select">
+                <input type="checkbox" name="checkbox" value="check2" />check 2
+            </div>
+
+            <div class="content_radio_select">
+                <input type="checkbox" name="checkbox" value="check3" />check 3
+            </div>
+
+            <p id="msgErrorCheckbox" class="msgError"></p>
+        </div>
+        <div class="contentInput">
+            <label>Radio</label>
+            <div class="content_radio_select">
+                <input type="radio" name="btnradio" value="radio1" />radio 1
+            </div>
+            <div class="content_radio_select">
+                <input type="radio" name="btnradio" value="radio2" />radio 2
+            </div>
+            <div class="content_radio_select">
+                <input type="radio" name="btnradio" value="radio3" />radio 3
+            </div>
+
+            <p id="msgErrorRadio" class="msgError"></p>
+        </div>
+        <div class="contentInput">
+            <label>Select</label>
+            <select id="select" name="selected">
+                <option value="-">-</option>
+                <option value="opcion1">Opción1</option>
+                <option value="opcion2">Opción2</option>
+                <option value="opcion3">Opción3</option>
+            </select>
+            <p id="msgErrorSelect" class="msgError"></p>
+        </div>
+        <div class="contentInput">
+            <label for="numero">Número</label>
+            <input type="text" id="numero" />
+            <p id="msgErrorNumero" class="msgError"></p>
+        </div>
+        <div class="contentInput">
+            <label for="correo">Correo</label>
+            <input type="text" id="correo" />
+            <p id="msgErrorCorreo" class="msgError"></p>
+        </div>
+        <div class="contentInput">
+            <label for="dni">DNI</label>
+            <input type="text" id="dni" />
+            <p id="msgErrorDNI" class="msgError"></p>
+        </div>
+        <div class="contentInput">
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" />
+            <p id="msgErrorFecha" class="msgError"></p>
+        </div>
+        <div class="contentInput">
+            <label for="telefono">Número de teléfono</label>
+            <input type="text" id="telefono" />
+            <p id="msgErrorTelefono" class="msgError"></p>
+        </div>
+        <div class="contentInput">
+            <label for="cuentaCorriente">Cuenta corriente</label>
+            <input type="text" id="cuentaCorriente" />
+            <p id="msgErrorCuentaCorriente" class="msgError"></p>
+        </div>
+        <div class="contentInput">
+            <label for="url">URL</label>
+            <input type="text" id="url" />
+            <p id="msgErrorUrl" class="msgError"></p>
+        </div>
+        <div id="content_button">
+            <button id="btn_validarDatos" class="btn">Validar datos</button>
+        </div>
+
+    </div>
+</body>
+<script src="./js/script.js"></script>
+
+</html>
