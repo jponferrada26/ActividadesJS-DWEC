@@ -13,7 +13,8 @@
         btnSalir,
         formularioMenu,
         backgroundMenu,
-        resultadoMenuPartidaMasterMind;
+        tituloResultadoMenuPartidaMasterMind,
+        numeroIntentosResultadoMenuPartidaMasterMind;
 
 
     let getUltimoIntento = function () {
@@ -87,7 +88,7 @@
      */
     let nuevoIntento = function () {
         let ultimoIntentoAnterior = getUltimoIntento();
-        if (ultimoIntentoAnterior != undefined) {//comprobar si existe un último intento
+        if (ultimoIntentoAnterior != undefined) { //comprobar si existe un último intento
             getUltimoIntento().style.pointerEvents = 'none';
         }
         containerIntentos.insertAdjacentHTML('beforeend', '<div class="containerIntentoColores">' +
@@ -214,9 +215,8 @@
      */
     let viewMenu = function () {
         if (arguments[0] == true) { //comprobar si existe un argumento con true que significa que tiene que ha ganado la partida
-            resultadoMenuPartidaMasterMind.insertAdjacentHTML('beforeend',
-                '<p id="titleResultadoMenuPartida">¡Has Ganado!</p>' +
-                '<p id="numeroIntentosMenuPartida">Intentos: ' + mastermind.getNumIntentos() + '</p>');
+            tituloResultadoMenuPartidaMasterMind.innerHTML = '¡Has Ganado!';
+            numeroIntentosResultadoMenuPartidaMasterMind.innerHTML = 'Intentos: ' + mastermind.getNumIntentos();
         }
         formularioMenu.style.top = '0%';
         backgroundMenu.style.visibility = 'visible';
@@ -252,6 +252,7 @@
         closeMenu();
 
         mastermind.init();
+        mastermind.mostrar();
 
         coloresAElegir = document.getElementsByClassName('colorEleccion');
         containerIntentos = document.getElementById('containerIntento');
@@ -277,7 +278,8 @@
         btnSalir = document.getElementById('btn-Salir');
         formularioMenu = document.getElementById('containerMenuOpciones');
         backgroundMenu = document.getElementById('backgroundMenuOpciones');
-        resultadoMenuPartidaMasterMind = document.getElementById('resultadoPartidaMasterMind');
+        tituloResultadoMenuPartidaMasterMind = document.getElementById('titleResultadoMenuPartida');
+        numeroIntentosResultadoMenuPartidaMasterMind = document.getElementById('numeroIntentosMenuPartida');
         inidicarCalbackBtnStart();
         inidicarCalbackBtnSalir();
 

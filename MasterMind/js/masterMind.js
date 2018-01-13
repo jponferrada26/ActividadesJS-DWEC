@@ -64,6 +64,7 @@ mastermind = (function () {
 
     return {
         init: init,
+        mostrar: mostrar,
         comprobarEstado: comprobarEstado,
         getNumIntentos: getNumIntentos,
         incrementarIntentos: incrementarIntentos
