@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Javier Ponferrada López">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/masterMind.js" charset="UTF-8"></script>
+    <script src="js/guiMasterMind.js" charset="UTF-8"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/gui.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <title>MasterMind-Jquery-UI</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 id="TitleWeb">MasterMind</h1>
+            <p id="contadorIntentos">Intentos: </p>
+        </div>
+        <div>
+            <p id="titleAuthor">Javier Ponferrada López</p>
+            <p id="titleDesarrolloWeb">2º Desarrollo de aplicaciones web</p>
+        </div>
+
+    </header>
+    <main>
+        <div id="containerMain">
+            <section id="containerJuego">
+                <div id="containerLeft">
+                    <div id="containerIntento">
+                        <div class="containerIntentoColores">
+                            <div class="circleIntentoColor"></div>
+                            <div class="circleIntentoColor"></div>
+                            <div class="circleIntentoColor"></div>
+                            <div class="circleIntentoColor"></div>
+
+                            <div class="circleEstadoColor"></div>
+                            <div class="circleEstadoColor"></div>
+                            <div class="circleEstadoColor"></div>
+                            <div class="circleEstadoColor"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="containerRight">
+                    <div id="containerEleccionColor">
+                        <div class="colorEleccion" id="CE-rojo"></div>
+                        <div class="colorEleccion" id="CE-blanco"></div>
+                        <div class="colorEleccion" id="CE-negro"></div>
+                        <div class="colorEleccion" id="CE-amarillo"></div>
+                        <div class="colorEleccion" id="CE-naranja"></div>
+                        <div class="colorEleccion" id="CE-marron"></div>
+                        <div class="colorEleccion" id="CE-azul"></div>
+                        <div class="colorEleccion" id="CE-verde"></div>
+                    </div>
+                    <img id="btn-checkColores" src="img/check.svg" alt="check">
+                </div>
+
+            </section>
+            <section>
+                <div id="containerMenuOpciones">
+                    <div id="containerInsideMenuOpciones">
+                        <p id="titleMenuMasterMind">MasterMind</p>
+                        <div id="resultadoPartidaMasterMind">
+                            <p id="titleResultadoMenuPartida"></p>
+                            <p id="numeroIntentosMenuPartida"></p>
+                        </div>
+                        <ul>
+                            <!--
+                            <a id="btn-Start">Nueva partida</a>
+                            <a id="btn-Salir">Salir</a>-->
+                        </ul>
+                        <div id="containerRedesSociales">
+                            <!--
+                            <a href="https://twitter.com/jponferrada26" target="_blank" class="redSocial">
+                                <img src="img/twitter-logo.svg" alt="">
+                            </a>
+                            <a href="https://www.linkedin.com/in/jponferrada" target="_blank" class="redSocial">
+                                <img src="img/linkedin-logo.svg" alt="">
+                            </a>
+                        -->
+                        </div>
+                    </div>
+                </div>
+                <!--<div id="backgroundMenuOpciones"></div>-->
+            </section>
+        </div>
+
+    </main>
+</body>
+
+</html>
