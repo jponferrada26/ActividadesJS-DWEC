@@ -1,0 +1,101 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "containerUrlServidor containerUrlServidor" "containerContenidosArchivo containerEstadoPeticion" "containerCabeceras containerCodigosEstado";
+    padding: 10px 10px;
+    grid-gap: 10px;
+}
+
+main>article:not(#containerUrlServidor) {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 10px
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+#urlServer {
+    width: 50%;
+    padding: 10px 0px;
+    border: none;
+    border-bottom: 2px solid #50b0f0;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+#urlServer:focus {
+    outline: none;
+}
+
+#containerUrlServidor {
+    grid-area: containerUrlServidor;
+}
+
+#btnMostrarContenidos {
+    padding: 10px 30px;
+    border: none;
+    background: #50b0f0;
+    color: #FFF;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#btnMostrarContenidos:focus{
+    outline: none;
+}
+
+article>ul {
+    list-style: none;
+}
+
+article>ul li {
+    padding: 10px 20px;
+    border-bottom: 2px solid #b8b8b867;
+}
+
+#containerEstadoPeticion {
+    grid-area: containerEstadoPeticion;
+}
+
+#containerEstadoPeticion>ul {
+    max-height: 60vh;
+    overflow: auto;
+}
+
+#containerContenidosArchivo {
+    grid-area: containerContenidosArchivo;
+}
+
+#containerContenidosArchivo>div {
+    min-height: 50vh;
+    max-height: 60vh;
+    overflow: auto;
+}
+
+#containerCabeceras {
+    grid-area: containerCabeceras;
+}
+
+#containerCabeceras>ul {
+    min-height: 20vh;
+    max-height: 30vh;
+    overflow: auto;
+}
+
+#containerCodigosEstado {
+    grid-area: containerCodigosEstado;
+}
+
+#containerCodigosEstado>ul {
+    min-height: 20vh;
+    max-height: 30vh;
+    overflow: auto;
+}
