@@ -1,0 +1,2 @@
+URL server: http://cpd.iesgrancapitan.org:9101/~poloja/EjerciciosDWEC/Proyecto%20DAWMANA/
+URL repo: https://github.com/jponferrada26/ActividadesJS-DWEC/tree/master/Proyecto%20DAWMANA
