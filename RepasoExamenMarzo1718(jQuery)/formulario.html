@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Javier Ponferrada López">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.validarInput.js"></script>
+    <script src="js/Alumno.js"></script>
+    <script charset="UTF-8" src="js/formulario.js"></script>
+    <title>Javier Ponferrada López</title>
+</head>
+
+<body>
+    <main>
+        <h1>Javier Ponferrada López</h1>
+
+        <div id="containrAllInputs">
+            <h3>Alta de alumno</h3>
+            <div class="container_input">
+                <label for="inputNombre">Nombre</label>
+                <input id="inputNombre" type="text" placeholder="Nombre">
+                <span class="errorForm" id="errorNombre"></span>
+            </div>
+            <div class="container_input">
+                <label for="inputPrimerApellido">Primer apellido</label>
+                <input id="inputPrimerApellido" type="text" placeholder="Primer apellido">
+                <span class="errorForm" id="errorPrimerApe"></span>
+            </div>
+            <div class="container_input">
+                <label for="inputSegundoApellido">Segundo apellido</label>
+                <input id="inputSegundoApellido" type="text" placeholder="Segundo apellido">
+                <span class="errorForm" id="errorSegundApe"></span>
+            </div>
+            <div class="container_input">
+                <label for="inputFecha">Fecha de naciminto</label>
+                <input id="inputFecha" type="text" placeholder="dd-mm-aaaa">
+                <span class="errorForm" id="errorFecha"></span>
+            </div>
+        </div>
+        <div>
+            <button id="btnCrearAlumno">Crear</button>
+            <button id="btnLimpiarAlumno">Limpiar</button>
+        </div>
+
+    </main>
+</body>
+
+</html>
